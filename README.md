@@ -77,4 +77,4 @@ src/
 
 ## 📄 Licença
 
-Este projeto é de uso pessoal/portfólio.
+Este projeto é de uso pessoal.

@@ -10,8 +10,8 @@ export default function Page() {
     <div>
       <NavBar />
       <Hero />
-      <Location />
       <About />
+      <Location />
       <Specialties limit={8} showSeeMore />
       <Footer />
     </div>
