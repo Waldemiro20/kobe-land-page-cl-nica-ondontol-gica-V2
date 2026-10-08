@@ -5,10 +5,9 @@ import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import { directionsHref, mapEmbedSrc } from "@/lib/contact";
 
 const footerLinks = [
-  { href: "/nossasEspecialidade", label: "Especialidades" },
   { href: "/#sobre", label: "Sobre nós" },
   { href: "/#localizacao", label: "Localização" },
-];
+  { href: "/nossasEspecialidade", label: "Especialidades" },];
 
 export default function Footer() {
   return (
