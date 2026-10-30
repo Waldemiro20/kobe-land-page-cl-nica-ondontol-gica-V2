@@ -42,7 +42,7 @@ export default function NavBar() {
 
   return (
     <motion.header
-      className="w-full"
+      className="w-full bg-background"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}

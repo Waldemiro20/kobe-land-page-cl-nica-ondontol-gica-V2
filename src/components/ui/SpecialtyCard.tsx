@@ -15,7 +15,7 @@ function ToothIcon() {
 
 export default function SpecialtyCard({ name, icon = <ToothIcon /> }: SpecialtyCardProps) {
   return (
-    <article className="flex h-[340px] w-[240px] flex-col items-center justify-center gap-[90px] rounded-[37px] border border-foreground pt-[89px] pr-[30px] pb-[89px] pl-[29px] text-center opacity-100 transition-colors hover:bg-foreground/10">
+    <article className="flex h-[340px] w-[240px] flex-col items-center justify-center gap-[90px] rounded-[37px] border border-brand bg-background pt-[89px] pr-[30px] pb-[89px] pl-[29px] text-center text-brand opacity-100 transition-colors hover:bg-[#E2E6F0]">
       {icon}
       <h3 className="text-xl font-semibold">{name}</h3>
     </article>

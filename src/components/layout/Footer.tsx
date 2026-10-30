@@ -11,8 +11,8 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="mt-auto w-full bg-black/20">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 py-12 md:grid-cols-3">
+    <footer className="mt-auto w-full border-t-2 border-brand bg-[#2DC8C84D]">
+      <div className="mx-auto grid min-h-[270px] max-w-[1445px] grid-cols-1 items-center gap-12 px-[40px] py-[43px] opacity-100 md:grid-cols-3 lg:gap-[156px]">
         <Reveal className="flex flex-col gap-3">
           <h2 className="text-lg font-semibold">Localização</h2>
           <div className="aspect-video w-full overflow-hidden rounded-[17px]">

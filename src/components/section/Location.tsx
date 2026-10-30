@@ -1,63 +1,42 @@
-
 import Reveal from "@/components/motion/Reveal";
-import Button from "@/components/ui/Button";
-import { directionsHref, mapEmbedSrc } from "@/lib/contact";
+import { mapEmbedSrc } from "@/lib/contact";
 
 export default function Location() {
     return (
-        <section id="localizacao" className="w-full">
-            <div className="mx-auto max-w-7xl px-6 py-16">
+        <section
+            id="localizacao"
+            className="w-full bg-[#086D87]"
+        >
+            <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center px-6 pt-[75px] pb-[80px] md:px-12 lg:px-20">
+
                 {/* Título */}
-                <Reveal>
-                    <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-                        Nossa localização
+                <Reveal className="w-full">
+                    <h2 className="mb-12 text-center text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl">
+                        Localização com Google Maps
                     </h2>
                 </Reveal>
 
-                {/* Descrição */}
-                <Reveal delay={0.3}>
-                    <p className="mt-2 max-w-xl text-base leading-7 opacity-70">
-                        Encontre nossa clínica e veja como chegar facilmente.
-                    </p>
-                </Reveal>
-
-                {/* Mapa */}
+                {/* Mapa do Google Maps */}
                 <Reveal
                     y={50}
-                    delay={0.4}
-                    className="mt-8"
+                    delay={0.2}
+                    className="w-full max-w-[1100px]"
                 >
-                    <div className="group relative overflow-hidden rounded-[2rem] border border-black/10 bg-white p-2 shadow-[0_25px_70px_-25px_rgba(0,0,0,0.35)] dark:border-white/10 dark:bg-white/5">
-                        {/* Borda interna */}
-                        <div className="pointer-events-none absolute inset-0 z-10 rounded-[2rem] ring-1 ring-inset ring-white/30" />
+                    <div className="h-[350px] w-full overflow-hidden rounded-[25px] bg-white shadow-[0_25px_70px_-25px_rgba(0,0,0,0.5)] md:h-[400px] lg:h-[450px] lg:rounded-[37px]">
 
-                        {/* Área do mapa */}
-                        <div className="aspect-[16/8] overflow-hidden rounded-[1.5rem]">
-                            <iframe
-                                title="Clínica Odontológica - Localização"
-                                src={mapEmbedSrc}
-                                className="h-full w-full border-0 transition-transform duration-700 group-hover:scale-[1.01]"
-                                loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade"
-                                allowFullScreen
-                            />
-                        </div>
+                        <iframe
+                            title="Mapa com a localização da clínica"
+                            src={mapEmbedSrc}
+                            className="h-full w-full border-0"
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            allowFullScreen
+                        />
+
                     </div>
                 </Reveal>
 
-                {/* Botão */}
-                <Reveal
-                    y={20}
-                    duration={0.6}
-                    delay={0.5}
-                    className="mt-8"
-                >
-                    <Button href={directionsHref} external>
-                        Venha até nós
-                    </Button>
-                </Reveal>
             </div>
         </section>
     );
 }
-
